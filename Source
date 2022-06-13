@@ -1,0 +1,215 @@
+if game.PlaceId == 9598746251 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Home Run Simulator", "BloodTheme")
+ 
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewToggle("Auto Bat", "Bats", function(v)
+        getgenv().autoswing = v
+        while true do
+            if not getgenv().autoswing then return end
+            wait(0.2)
+
+local args = {
+    [1] = 100
+}
+
+game:GetService("ReplicatedStorage").RF.Launch_Ball:InvokeServer(unpack(args))
+end 
+end)
+
+MainSection:NewToggle("Auto Rebirth", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+        wait(0.2)
+
+game:GetService("ReplicatedStorage").RF.Purchase_Rebirth:InvokeServer()
+    end 
+end)
+
+
+    local Upgrade = Window:NewTab("Upgrade")
+    local UpgradeSection = Upgrade:NewSection("Upgrade X1")
+
+    UpgradeSection:NewButton("Upgrade Stength", "Upgrades Strength", function()
+
+local args = {
+    [1] = "Strength",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+
+    end)
+
+    UpgradeSection:NewButton("Upgrade Accuracy", "Upgrade Accuracy", function()
+
+local args = {
+    [1] = "Accuracy",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+
+    end)
+
+    UpgradeSection:NewButton("Upgrade Speed", "Upgrades Speed", function()
+
+local args = {
+    [1] = "Speed",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+
+    end)
+
+    local UpgradeSection = Upgrade:NewSection("Upgrade X3")
+
+    UpgradeSection:NewButton("Upgrade Stength", "Upgrades Strength", function()
+
+        local args = {
+            [1] = "Strength",
+            [2] = 3
+        }
+        
+        game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+        
+            end)
+        
+            UpgradeSection:NewButton("Upgrade Accuracy", "Upgrade Accuracy", function()
+        
+        local args = {
+            [1] = "Accuracy",
+            [2] = 3
+        }
+        
+        game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+        
+            end)
+        
+            UpgradeSection:NewButton("Upgrade Speed", "Upgrades Speed", function()
+        
+        local args = {
+            [1] = "Speed",
+            [2] = 3
+        }
+        
+        game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+        
+            end)
+        
+            local UpgradeSection = Upgrade:NewSection("Upgrade X10")
+
+            UpgradeSection:NewButton("Upgrade Stength", "Upgrades Strength", function()
+
+                local args = {
+                    [1] = "Strength",
+                    [2] = 10
+                }
+                
+                game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+                
+                    end)
+                
+                    UpgradeSection:NewButton("Upgrade Accuracy", "Upgrade Accuracy", function()
+                
+                local args = {
+                    [1] = "Accuracy",
+                    [2] = 10
+                }
+                
+                game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+                
+                    end)
+                
+                    UpgradeSection:NewButton("Upgrade Speed", "Upgrades Speed", function()
+                
+                local args = {
+                    [1] = "Speed",
+                    [2] = 10
+                }
+                
+                game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(args))
+                
+                    end)
+
+
+
+    local Crates = Window:NewTab("Crates")
+    local CratesSection = Crates:NewSection("Crates")
+
+   CratesSection:NewButton("General 1", "Opens Crate", function()
+
+local args = {
+    [1] = "General 1"
+}
+
+game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+
+    end)
+
+    CratesSection:NewButton("General 2", "Opens Crate", function()
+
+        local args = {
+            [1] = "General 2"
+        }
+        
+        game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+        
+        end)
+
+        CratesSection:NewButton("Forest", "Opens Crate", function()
+
+            local args = {
+                [1] = "Forest"
+            }
+            
+            game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+        end)
+
+        CratesSection:NewButton("Parking Lot", "Opens Crate", function()
+
+            local args = {
+                [1] = "Parking Lot"
+            }
+            
+            game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+        end)
+
+        CratesSection:NewButton("Desert", "Opens Crate", function()
+            local args = {
+                [1] = "Desert"
+            }
+            
+            game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+        end)
+
+        CratesSection:NewButton("Beach", "Opens Crate", function()
+            local args = {
+                [1] = "Beach"
+            }
+            
+            game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+        end)
+
+        CratesSection:NewButton("Moon", "Opens Crate", function()
+            local args = {
+                [1] = "Moon"
+            }
+            
+            game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
+        end)
+
+        local Player = Window:NewTab("Player")
+        local PlayerSection = Player:NewSection("Player")
+     
+        PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+        end)
+     
+        local Credits = Window:NewTab("Credits")
+        local CreditsSection = Credits:NewSection("OverK2ll#3442")
+    end 
