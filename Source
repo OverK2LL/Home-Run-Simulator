@@ -9,7 +9,7 @@ if game.PlaceId == 9598746251 then
         getgenv().autoswing = v
         while true do
             if not getgenv().autoswing then return end
-            wait(0.2)
+            wait(1)
 
 local args = {
     [1] = 100
