@@ -136,7 +136,28 @@ game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(ar
                 
                     end)
 
+    local Teleport = Window:NewTab("Teleport")
+    local TeleportSection = Teleport:NewSection("Teleport")
 
+    TeleportSection:NewButton("Forest", "Teleports to Forest", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-226.338348, 7.65819073, -399.356628, 0.73107934, -3.2732892e-08, 0.682292461, 2.99970431e-08, 1, 1.58329119e-08, -0.682292461, 8.8916412e-09, 0.73107934)        
+    end)
+
+    TeleportSection:NewButton("Parking Lot", "Teleports to Parking Lot", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3.88637328, 7.85797405, -175.768433, 0.71665597, -2.21864713e-08, 0.697426915, -4.4997897e-08, 1, 7.80504479e-08, -0.697426915, -8.73180639e-08, 0.71665597)        
+    end)
+
+    TeleportSection:NewButton("Desert", "Teleports to Desert", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(281.23877, 7.55792999, 109.108032, 0.716655493, -1.62396507e-09, 0.697427332, 4.30225313e-08, 1, -4.18801598e-08, -0.697427332, 6.00187349e-08, 0.716655493)        
+    end)
+
+    TeleportSection:NewButton("Beach", "Teleports to Beach", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(508.875641, 7.45788383, 335.46698, 0.701482892, -3.40898438e-08, 0.7126863, 7.62416192e-08, 1, -2.7210211e-08, -0.7126863, 7.34238554e-08, 0.701482892)        
+    end)
+
+    TeleportSection:NewButton("Moon", "Teleports to Moon", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1054.83643, 469.062958, 933.850525, 0.695961535, -4.85252123e-08, 0.718079031, 7.58178516e-08, 1, -5.90616889e-09, -0.718079031, 5.85536739e-08, 0.695961535)        
+    end)
 
     local Crates = Window:NewTab("Crates")
     local CratesSection = Crates:NewSection("Crates")
