@@ -22,7 +22,7 @@ end)
 MainSection:NewToggle("Auto Rebirth", "Rebirths", function(v)
     getgenv().autoswing = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autoclick then return end
         wait(0.2)
 
 game:GetService("ReplicatedStorage").RF.Purchase_Rebirth:InvokeServer()
@@ -234,3 +234,6 @@ game:GetService("ReplicatedStorage").RF.Open_Crate:InvokeServer(unpack(args))
         local Credits = Window:NewTab("Credits")
         local CreditsSection = Credits:NewSection("OverK2ll#3442")
     end 
+
+
+    
