@@ -158,7 +158,9 @@ game:GetService("ReplicatedStorage").RF.Upgrade_Attribute:InvokeServer(unpack(ar
     TeleportSection:NewButton("Moon", "Teleports to Moon", function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1054.83643, 469.062958, 933.850525, 0.695961535, -4.85252123e-08, 0.718079031, 7.58178516e-08, 1, -5.90616889e-09, -0.718079031, 5.85536739e-08, 0.695961535)        
     end)
-
+    TeleportSection:NewButton("Mars", "Teleports to Mars", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1847.21509, 617.605652, 1681.77808, 0.203059733, 9.22937673e-08, 0.979166329, -6.22463858e-08, 1, -8.13488228e-08, -0.979166329, -4.44308981e-08, 0.203059733)        
+    end)
     local Crates = Window:NewTab("Crates")
     local CratesSection = Crates:NewSection("Crates")
 
